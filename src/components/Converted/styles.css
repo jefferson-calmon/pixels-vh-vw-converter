@@ -57,3 +57,34 @@
 #data .boxes .box h3 span{
     font-size: 1.95vw;
 }
+
+
+@media (max-width: 768px){
+    #image img{
+        width: 150px;
+    }
+
+    #data .boxes{
+        grid-template-columns: 120px 120px;
+        grid-gap: 20px;
+    }
+
+    #data .boxes .box{
+        width: 120px;
+        height: 90px;
+        border-top: 7px solid #fff;
+    }
+
+    #data .boxes .box h2{
+        font-size: 13px;
+        margin: 10px 0 10px;
+    }
+
+    #data .boxes .box h3{
+        font-size: 20px;
+    }
+
+    #data .boxes .box h3 span{
+        font-size: 16px;
+    }
+}

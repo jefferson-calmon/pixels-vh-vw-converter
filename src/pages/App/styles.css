@@ -25,7 +25,6 @@ img{
 #app{
     width: 87%;
     height: 85vh;
-    overflow-y: scroll;
     display: grid;
     grid-template-columns: 45% 55%;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.137);
@@ -124,10 +123,62 @@ footer p a{
     color: inherit;
     text-decoration: none;
 }
+
 footer p a:hover{
     text-decoration: underline;
 }
 
 footer p i{
     color: red;
+}
+
+
+@media (max-width: 768px){
+    #app{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #enter{
+        height: 60vh;
+    }
+
+    #enter .title h1{
+        font-size: 30px;
+    }
+
+    #enter .title p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #enter .inputs div{
+        margin-bottom: 30px;
+    }
+
+    #enter .inputs div .input{
+        height: 30px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    #enter .inputs div .inputNumber{
+        width: 100px;
+        padding: 0 10px;
+    }
+
+    #enter .inputs #submit{
+        font-size: 18px;
+        padding: 10px 25px;
+        border-radius: 7px;
+    }
+
+    #out{
+        height: 40vh;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
 }
