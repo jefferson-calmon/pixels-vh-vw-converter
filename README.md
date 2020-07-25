@@ -13,9 +13,11 @@ Com isso os devs podem converter os valores em pixels do seu site para vw ou vh 
 A minha dica sobre a utilização desse projeto é: Construir todo o site normalmente usando pixels(px) e depois voltar convertendo os valores para vw.
 
 
+
 ## :rocket: Tecnologia
 
 - ReactJS
+
 
 
 ## :dart: Vizualização e utilização do projeto
@@ -35,3 +37,8 @@ ou
 - Rodar o projeto com ```npm start``` ou ```yarn start```
 
 - Acessar ```http://localhost:3000``` em seu navegador
+
+
+---
+
+Criado com :heart: por [Jefferson Ferrari](https://jefferson-calmon.github.io)
