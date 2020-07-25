@@ -1,0 +1,59 @@
+.converted{
+    height: 100%;
+    position: relative;
+}
+
+#image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#image img{
+    width: 25.41vw;
+}
+
+#data{
+    display: none;
+    height: 100%;
+    background: #262626;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#data .boxes{
+    display: grid;
+    grid-template-columns: 15.63722vw 15.63722vw;
+    grid-gap: 3.90vw;
+    place-items: center;
+    place-content: center;
+    width: 100%;
+}
+
+#data .boxes .box{
+    width: 15.63vw;
+    height: 11.72vw;
+    border-radius: 10px;
+    background: #fff;
+    border-top: 0.93vw solid #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #262626;
+}
+
+#data .boxes .box h2{
+    font-size: 1.40vw;
+    margin: 1.56vw 0 0.78vw;
+    letter-spacing: 0.07vw;
+    color: #626262;
+}
+
+#data .boxes .box h3{
+    font-size: 2.34vw;
+}
+
+#data .boxes .box h3 span{
+    font-size: 1.95vw;
+}

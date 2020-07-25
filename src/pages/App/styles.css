@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    user-select: none;
+    pointer-events: none;
+}
+
+.Container{
+    width: 100%;
+    height: 100%;
+    background: #e0f0ff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#app{
+    width: 87%;
+    height: 85vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.137);
+    border-radius: 0.54vw;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.box-data:nth-child(1){
+    background: #fff;
+}
+
+.box-data:nth-child(2){
+    background: #f9f9f9;
+}
+
+#enter{
+    padding:  3.90vw  2.34vw;
+    display: grid;
+    place-content: center;
+}
+
+#enter .title{
+    text-align: center;
+    color: #262626;
+}
+
+#enter .title h1{
+    font-weight: 700;
+    font-size: 3.12vw;
+    margin-bottom: 1.56vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#enter .title p{
+    font-size: 1.25vw;
+    line-height: 150%;
+    color: rgb(141, 139, 139);
+}
+
+#enter .inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3.90vw;
+}
+
+#enter .inputs div{
+    margin-bottom: 3.12vw;
+}
+
+#enter .inputs div .input{
+    border: none;
+    height: 2.73vw;
+    border: 0.03vw solid #262626;
+    margin-left: 0.78vw;
+    box-shadow: 0.15vw 0.15vw 1.17vw rgba(0, 0, 0, 0.253);
+    font-size: 1.40vw;
+}
+
+#enter .inputs div .inputNumber{
+    padding: 0 0.78vw;
+    width: 11.72vw;
+}
+
+#enter .inputs #submit{
+    position: relative;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 1.17vw 1.95vw;
+    background: #69CDFF;
+    cursor: pointer;
+    border-radius:  0.54vw;
+    color: #fff;
+    font-size: 1.40vw;
+    font-weight: bold;
+    letter-spacing: 0.07vw;
+}
+
+/* #out{
+    display: grid;
+    place-items: center;
+} */
