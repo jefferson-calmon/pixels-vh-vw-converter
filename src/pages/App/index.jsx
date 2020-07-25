@@ -59,6 +59,10 @@ function App() {
             <Converted value={value} metric={metric}/>
           </div>
         </section>
+
+        <footer>
+          <p>Criado com <i className="fas fa-heart"></i> por <a href="https://jefferson-calmon.github.io" target="_blank" rel="noopener noreferrer">Jefferson Ferrari</a></p>
+        </footer>
     </div>
   );
 }

@@ -113,3 +113,21 @@ img{
     display: grid;
     place-items: center;
 } */
+
+footer p{
+    font-size: 1.33020vw;
+    font-weight: 500;
+    letter-spacing: 0.07825vw;
+}
+
+footer p a{
+    color: inherit;
+    text-decoration: none;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer p i{
+    color: red;
+}

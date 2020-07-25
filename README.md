@@ -1,7 +1,7 @@
 <div align="center">
     <h1>PWH Converter</h1>
     <p>Converta valores em pixels para Vh ou Vw e crie incríveis sites responsivos.</p>
-    <img src="img-readme/logo.png"/>
+    <img src="img-readme/logo.png" width="150px"/>
 </div>
 
 ## :book: Sobre o projeto
@@ -20,13 +20,13 @@ A minha dica sobre a utilização desse projeto é: Construir todo o site normal
 
 ## :dart: Vizualização e utilização do projeto
 
-Para acessar esta projeto, você pode clicar [aqui]()
+Para acessar esta projeto, você pode clicar [aqui](https://pwh-converter.netlify.app/)
 
 ou
 
 ### Rodar em seu PC
 
-- Clonar este repositório com ```git clone ```
+- Clonar este repositório com ```git clone https://github.com/jefferson-calmon/pixels-vh-vw-converter.git```
 
 - Acessar o pasta do projeto com ```cd pixel-vw-vh-converter```
 
