@@ -43,8 +43,8 @@ function App() {
                 <input type="number" className="inputNumber input" id="value" autoFocus onKeyUp={event => ChangeValue(event)}/>
                 <select name="medida" id="sel" value={metric} className="input" onChange={event => ChangeMetric(event)}>
                   <option value="px">px</option>
-                  {/* <option value="vh">vh</option>
-                  <option value="vw">vw</option> */}
+                  <option value="vh">vh</option>
+                  <option value="vw">vw</option>
                 </select>
               </div>
 

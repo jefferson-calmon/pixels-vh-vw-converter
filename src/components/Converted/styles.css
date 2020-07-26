@@ -43,6 +43,18 @@
     color: #262626;
 }
 
+#data .boxes .box.red{
+    border-color: red;
+}
+
+#data .boxes .box.blue{
+    border-color: blue;
+}
+
+#data .boxes .box.green{
+    border-color: green;
+}
+
 #data .boxes .box h2{
     font-size: 1.40vw;
     margin: 1.56vw 0 0.78vw;
@@ -52,6 +64,16 @@
 
 #data .boxes .box h3{
     font-size: 2.34vw;
+    animation: animate 1s linear ease-in-out;
+}
+
+@keyframes animate{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.9);
+    }
 }
 
 #data .boxes .box h3 span{
