@@ -1,4 +1,5 @@
 import React from 'react';
+import copy from 'copy-to-clipboard';
 
 import './styles.css'
 
@@ -16,11 +17,11 @@ const Converted = ({ value, metric }) => {
     }
 
     function VhToPx(val){
-        return ((window.innerHeight * val) / 100)
+        return ((window.innerHeight * val) / 100).toFixed(3)
     }
 
     function VwToPx(val){
-        return ((window.innerWidth * value) / 100)
+        return ((window.innerWidth * value) / 100).toFixed(3)
     }
 
     var ValuePx = 0, ValueVh = 0, ValueVw = 0
@@ -49,8 +50,20 @@ const Converted = ({ value, metric }) => {
 const Component = (props) => {
 
     
-    function EffectClickedOnValue(event) {
-        console.log(event)
+    function EffectClickedOnValue(id, text, msgId) {
+        let element = document.getElementById(id);
+        let msg = document.getElementById(msgId)
+
+        element.style.animation = 'animate .2s linear';
+        msg.style.animation = 'copy .5s linear';
+
+        setTimeout(() => {
+            element.style.animation = ''
+            msg.style.animation = ''
+            msg.style.opacity = 0
+        }, 600)
+
+        copy(text)
     }
 
     return(
@@ -63,17 +76,38 @@ const Component = (props) => {
                 <div className="boxes">
                     <div className="box blue" >
                         <h2>Pixels</h2>
-                        <h3 onClick={e => EffectClickedOnValue(e)} >{props.ValuePx}<span>px</span></h3>
+                        
+                        <h3 
+                        id="tex-one" 
+                        onClick={() => EffectClickedOnValue('tex-one', props.ValuePx + 'px', "msg-one")} >{props.ValuePx}
+                            <span>px</span>
+                        </h3>
+
+                        <div className="copied" id="msg-one">Copied!</div>
                     </div>
 
                     <div className="box red">
                         <h2>Viewport Height</h2>
-                        <h3>{props.ValueVh}<span>vh</span></h3>
+                        
+                        <h3 
+                        id="tex-two" 
+                        onClick={() => EffectClickedOnValue('tex-two', props.ValueVh + 'vh', "msg-two")}>{props.ValueVh}
+                            <span>vh</span>
+                        </h3>
+
+                        <div className="copied" id="msg-two">Copied!</div>
                     </div>
 
                     <div className="box green" >
                         <h2>Viewport Width</h2>
-                        <h3>{props.ValueVw}<span>vw</span></h3>
+                        
+                        <h3  
+                        id="tex-three" 
+                        onClick={() => EffectClickedOnValue('tex-three', props.ValueVw + 'vw', "msg-three")}>{props.ValueVw}
+                            <span>vw</span>
+                        </h3>
+
+                        <div className="copied" id="msg-three">Copied!</div>
                     </div>
                 </div>
             </div>

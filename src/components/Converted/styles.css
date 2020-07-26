@@ -41,6 +41,7 @@
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: #262626;
+    position: relative;
 }
 
 #data .boxes .box.red{
@@ -64,7 +65,7 @@
 
 #data .boxes .box h3{
     font-size: 2.34vw;
-    animation: animate 1s linear ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes animate{
@@ -72,12 +73,43 @@
         transform: scale(1);
     }
     50%{
-        transform: scale(.9);
+        transform: scale(.8);
     }
 }
 
 #data .boxes .box h3 span{
     font-size: 1.95vw;
+}
+
+.copied{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7vw;
+    padding: 1vw 0 0.300vw; 
+    margin-top: 0.678vw;
+    color: #fff;
+    background: green;
+    clip-path: polygon(0 100%, 0 22%, 37% 22%, 50% 0, 62% 22%, 100% 22%, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.300vw;
+    font-family: 'Ubuntu';
+    /* border-radius: 0.678vw; */
+    opacity: 0;
+}
+
+@keyframes copy{
+    0%{
+        top: -3px;
+        opacity: .2;
+    }
+
+    100%{
+        top: 0;
+        opacity: 1;
+    }
 }
 
 
@@ -108,5 +140,11 @@
 
     #data .boxes .box h3 span{
         font-size: 16px;
+    }
+
+    .copied{
+        width: 100px;
+        font-size: 15px;
+        padding: 9px 0 3px;
     }
 }
