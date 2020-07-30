@@ -9,19 +9,19 @@ const Converted = ({ value, metric }) => {
 
 
     function PxToVw(val){
-        return ((100 * val) / window.innerWidth).toFixed(3)
+        return ((100 * val) / window.innerWidth).toFixed(5)
     }
 
     function PxToVh(val){
-        return ((100 * val) / window.innerHeight).toFixed(3)
+        return ((100 * val) / window.innerHeight).toFixed(5)
     }
 
     function VhToPx(val){
-        return ((window.innerHeight * val) / 100).toFixed(3)
+        return ((window.innerHeight * val) / 100).toFixed(5)
     }
 
     function VwToPx(val){
-        return ((window.innerWidth * value) / 100).toFixed(3)
+        return ((window.innerWidth * value) / 100).toFixed(5)
     }
 
     var ValuePx = 0, ValueVh = 0, ValueVw = 0
